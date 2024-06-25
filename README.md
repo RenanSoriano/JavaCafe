@@ -33,7 +33,7 @@ O Café Management System é uma aplicação JavaFX para gerenciamento de vendas
 ## Instalação
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/usuario/cafe-management.git
+    git clone https://github.com/RenanSoriano/JavaCafe.git
     ```
 
 2. Configure o projeto na IDE:
