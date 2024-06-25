@@ -1,0 +1,25 @@
+cafe-management/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── cafe/
+│   │   │           ├── Main.java
+│   │   │           ├── Controller.java
+│   │   │           ├── Product.java
+│   │   │           ├── Sale.java
+│   │   │           ├── OrderItem.java
+│   │   │           ├── ProductDAO.java
+│   │   │           ├── SaleDAO.java
+│   │   │           ├── CustomExceptions.java
+│   │   │           ├── DataStorage.java
+│   │   │           └── Invoice.java
+│   ├── resources/
+│   │   └── com/
+│   │       └── cafe/
+│   │           └── view.fxml
+└── test/
+└── java/
+└── com/
+└── cafe/
+└── AppTest.java

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.cafe.Controller">
+    <tabs>
+        <!-- Tab for Products Management -->
+        <Tab text="Products">
+            <VBox spacing="10">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <HBox spacing="10">
+                    <Label text="Name:"/>
+                    <TextField fx:id="nameField"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Price:"/>
+                    <TextField fx:id="priceField"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Quantity:"/>
+                    <TextField fx:id="quantityField"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Button text="Add" onAction="#handleAddProduct"/>
+                    <Button text="Update" onAction="#handleUpdateProduct"/>
+                    <Button text="Delete" onAction="#handleDeleteProduct"/>
+                </HBox>
+                <TableView fx:id="productTable" prefHeight="200">
+                    <columns>
+                        <TableColumn fx:id="idColumn" text="ID"/>
+                        <TableColumn fx:id="nameColumn" text="Name"/>
+                        <TableColumn fx:id="priceColumn" text="Price"/>
+                        <TableColumn fx:id="quantityColumn" text="Quantity"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </Tab>
+
+        <!-- Tab for Sales Management -->
+        <Tab text="Sales">
+            <VBox spacing="10">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <HBox spacing="10">
+                    <Label text="Product ID:"/>
+                    <TextField fx:id="productIdField"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Label text="Quantity:"/>
+                    <TextField fx:id="saleQuantityField"/>
+                </HBox>
+                <HBox spacing="10">
+                    <Button text="Add Item" onAction="#handleAddOrderItem"/>
+                </HBox>
+                <TableView fx:id="orderItemsTable" prefHeight="200">
+                    <columns>
+                        <TableColumn fx:id="orderItemProductIdColumn" text="Product ID"/>
+                        <TableColumn fx:id="orderItemProductNameColumn" text="Product Name"/>
+                        <TableColumn fx:id="orderItemQuantityColumn" text="Quantity"/>
+                        <TableColumn fx:id="orderItemPriceColumn" text="Price"/>
+                        <TableColumn fx:id="orderItemTotalPriceColumn" text="Total Price"/>
+                    </columns>
+                </TableView>
+                <HBox spacing="10">
+                    <Button text="Complete Sale" onAction="#handleCompleteSale"/>
+                    <Button text="Sales Report" onAction="#handleSalesReport"/> <!-- Botão Sales Report -->
+                </HBox>
+                <TableView fx:id="saleTable" prefHeight="200">
+                    <columns>
+                        <TableColumn fx:id="saleIdColumn" text="Sale ID"/>
+                        <TableColumn fx:id="saleTotalCostColumn" text="Total Cost"/>
+                        <TableColumn fx:id="saleTimeColumn" text="Sale Time"/>
+                    </columns>
+                </TableView>
+                <!-- Adicione uma tabela de produtos para a aba de vendas -->
+                <TableView fx:id="saleProductTable" prefHeight="200">
+                    <columns>
+                        <TableColumn fx:id="saleProductIdColumn" text="ID"/>
+                        <TableColumn fx:id="saleProductNameColumn" text="Name"/>
+                        <TableColumn fx:id="saleProductPriceColumn" text="Price"/>
+                        <TableColumn fx:id="saleProductQuantityColumn" text="Quantity"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </Tab>
+    </tabs>
+</TabPane>
+
+
+
+
