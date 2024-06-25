@@ -13,8 +13,7 @@
   - [Gerenciamento de Vendas](#gerenciamento-de-vendas)
   - [Relatório de Vendas](#relatório-de-vendas)
   - [Alertas de Estoque Baixo](#alertas-de-estoque-baixo)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Contato](#contato)
+
 
 ## Introdução
 O Café Management System é uma aplicação JavaFX para gerenciamento de vendas e estoque de um café. A aplicação permite adicionar, atualizar, remover produtos, processar vendas, gerar notas fiscais, visualizar relatórios de vendas e alertar quando os níveis de estoque estão baixos.
