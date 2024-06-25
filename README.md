@@ -92,8 +92,3 @@ O Café Management System é uma aplicação JavaFX para gerenciamento de vendas
 - Se algum produto tiver quantidade menor ou igual a 5, um alerta será exibido.
 
 
-│   │   │           └── Invoice.java
-│   ├── resources/
-│   │   └── com/
-│   │       └── cafe/
-│   │           └── view.fxml
